@@ -22,17 +22,17 @@ function hourRotation(hours, minutes){
 function tick(){
     seconds ++;
 
-    if (seconds >= 60){
+    if (seconds == 60){
         senconds = 0;
         minutes ++;
     }
     
-    if (minutes >= 60){
+    if (minutes == 60){
         minutes = 0;
         hours ++;
     }
 
-    if (hours >= 12){
+    if (hours == 12){
         hours = 0;
     }
     
